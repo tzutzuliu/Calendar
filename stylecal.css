@@ -1,0 +1,23 @@
+*{
+    color: black;
+    text-align: left;
+}
+
+
+h2 { 
+    color: aqua;
+}
+
+/* 視窗背景色彩設定 */ 
+body {
+    background-image: url('./CAPOO.jpg');
+    background-position: right center;
+    background-attachment: scroll;
+}
+
+/* header 標題*/
+header {
+    text-align: start;
+    margin-bottom: 50px auto;
+}
+
