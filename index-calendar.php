@@ -5,76 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>萬年曆作業</title>
-
-    <style>
-        *{
-            color: black;
-            text-align: center;
-            font-size: 20px;
-            font-weight: bolder;
-        }
-
-        /* 視窗背景色彩設定 */ 
-        body {
-            background-image: url('./gemdesk04.jpg');
-            background-attachment: scroll;
-            height: fit-content;
-            width: fit-content;
-
-        }
-
-        h2 {
-            font-size: 40px;
-        }
-
-        /* header 標題*/
-        header {
-            text-align: start;
-            margin-bottom: 50px auto;
-        }
-                
-        .table,th, td {
-            border: 2px solid black;
-
-        }
-
-        table{
-            flex-wrap: nowrap;
-            margin-left:auto; 
-            margin-right:auto;
-            height: 50vh;
-            width: 50vh;
-        }
-
-        table div{
-            display: flex;
-        }
-
-        .table td{
-            padding-top: 5px;
-            text-align: center;
-            border: 100px;
-        }
-
-        .weekend{
-            background: tan;
-        }
-
-        .workday{
-            background: white;
-        }
-
-        .today{
-            background: palegreen;
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <h2>
-        G.E.M*線上萬年曆
+        G.E.M.*線上萬年曆
     </h2>
 
 
@@ -101,6 +37,8 @@ $month=5;
   $today=date("Y-m-d");
   $lastWeekday=date("w",strtotime($lastDay));
   $dateHouse=[];
+  $birthday="08-16";
+  echo "G.E.M.鄧紫棋生日是:".$birthday."<br>";
 
     for($i=0;$i<$firstWeekday;$i++){
         $dateHouse[]="";
@@ -115,9 +53,10 @@ $month=5;
         $dateHouse[]="";
     }
 
-  echo " Month : ".$month;
+  echo"<br>";  
+  echo "現在月份:".$month."月份";
   echo "<br>";
-  echo " Today is : " .$today;
+  echo " 現在日期是: " .$today;
   echo "<br>";
   echo "<br>";
 
