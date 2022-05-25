@@ -158,7 +158,7 @@
     <!-- 萬年曆切換按鈕的部份 先給他一個nav標籤 -->
     <div class='nav'>
         <span>
-            <a href='index-calendarhw2.php?year=<?=$previousYear;?>&month=<?=$previousMonth;?>' class="button1">Prev</a>
+            <a href='index-calendarhw.php?year=<?=$previousYear;?>&month=<?=$previousMonth;?>' class="button1">Prev</a>
         </span>
 
         <span>
@@ -168,7 +168,7 @@
         </span>
 
         <span>
-            <a href='index-calendarhw2.php?year=<?=$nextYear;?>&month=<?=$nextMonth;?>' class="button1">Next</a>
+            <a href='index-calendarhw.php?year=<?=$nextYear;?>&month=<?=$nextMonth;?>' class="button1">Next</a>
         </span>
 
     </div>
